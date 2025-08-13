@@ -5,16 +5,16 @@
 replicaCount: 1
 
 image:
-  repository: aakash6012/go-lang-app
+  repository: docker.io/aakash6012/go-lang-app
   pullPolicy: Always
-  tag: "16933475873"
+  tag: "latest"
 
 ingress:
-  enabled: false
-  className: ""
-  annotations: {}
+  enabled: true
+  className: nginx
   hosts:
-    - host: chart-example.local
+    - host: go-web-app.local
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: Prefix
+
