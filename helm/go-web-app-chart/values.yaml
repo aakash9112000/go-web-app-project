@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: aakash6012/go-lang-app
   pullPolicy: Always
-  tag: "16932094178"
+  tag: "16933475873"
 
 ingress:
   enabled: false
