@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: docker.io/aakash6012/go-lang-app
   pullPolicy: Always
-  tag: "latest"
+  tag: "16956043243"
 
 ingress:
   enabled: true
